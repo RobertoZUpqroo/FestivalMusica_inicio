@@ -1,0 +1,26 @@
+{
+  "name": "festivalmusica_inicio",
+  "version": "1.0.0",
+  "description": "Proyecto GULP, SASS y HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertoZUpqroo/MusicFest.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "RobertoZUpqroo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RobertoZUpqroo/MusicFest/issues"
+  },
+  "homepage": "https://github.com/RobertoZUpqroo/MusicFest#readme",
+  "devDependencies": {
+    "sass": "^1.70.0"
+  }
+}
