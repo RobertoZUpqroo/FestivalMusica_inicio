@@ -4,7 +4,9 @@
   "description": "Proyecto GULP, SASS y HTML",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch src/scss:build/css",
+    "tarea": "gulp tarea",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
   },
   "homepage": "https://github.com/RobertoZUpqroo/MusicFest#readme",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.70.0"
   }
 }
