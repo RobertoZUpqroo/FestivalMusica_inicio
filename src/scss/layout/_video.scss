@@ -3,6 +3,9 @@
 
 .video {
     position: relative;
+    max-height: 70rem;
+    min-height: 50rem;
+    overflow: hidden;
 
     .overlay {
         position: absolute;
@@ -11,10 +14,35 @@
         height: 100%;
         width: 100%;
         z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     video {
-        width: 100%;
+        width: auto;
+        display: block;
         z-index: 0;
+        @include m.desktop {
+            width: 100%;
+        }
+    }
+}
+
+.contenido-video {
+    h2 {
+        color: v.$text;
+        font-size: 7rem;
+        margin: 0;
+    }
+
+    p {
+        background-color: v.$secondary;
+        display: inline-block;
+        padding: 1rem 2rem;
+        color: v.$text;
+        font-weight: 700;
+        font-size: 2.4rem;
+        margin: 0;
     }
 }
