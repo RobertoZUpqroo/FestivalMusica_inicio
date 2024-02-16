@@ -1,0 +1,39 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    background-color: v.$background;
+    h1 {
+        color: v.$text;
+        text-align: center;
+        @include m.tablet {
+            margin: 0;
+        }
+    }
+
+    .contenido-header {
+        padding: 2rem;
+        @include m.tablet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.navegacion-principal {
+    @include m.tablet {
+        display: flex;
+        gap: 2rem;
+    }
+    a {
+        display: block;
+        text-align: center;
+        color: v.$text;
+        font-size: 2.4rem;
+
+        &:hover {
+            color: v.$accent;
+        }
+    }
+}

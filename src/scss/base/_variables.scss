@@ -2,8 +2,14 @@
 $fuente_principal: 'Montserrat', sans-serif;
 
 //Colores
-$text: #efe3fd;
-$background: #0e021b;
-$primary: #bd74f6;
-$secondary: #a10a36;
-$accent: #f01d11;
+$text: #e5ebed;
+$background: #0b0e10;
+$primary: #b3c5ca;
+$secondary: #475266;
+$accent: #868daa;
+
+//Tamaños de Media Queries
+$phone: 480px;
+$tablet: 768px;
+$desktop: 992px;
+$desktopXL: 1200px;

@@ -306,3 +306,106 @@ template {
 [hidden] {
   display: none;
 }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  background-color: #0b0e10;
+}
+
+p {
+  font-size: 2rem;
+  color: #e5ebed;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin: 0 0 5rem 0;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.header {
+  background-color: #0b0e10;
+}
+.header h1 {
+  color: #e5ebed;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header h1 {
+    margin: 0;
+  }
+}
+.header .contenido-header {
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  .header .contenido-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal {
+    display: flex;
+    gap: 2rem;
+  }
+}
+.navegacion-principal a {
+  display: block;
+  text-align: center;
+  color: #e5ebed;
+  font-size: 2.4rem;
+}
+.navegacion-principal a:hover {
+  color: #868daa;
+}
+
+.video {
+  position: relative;
+}
+.video .overlay {
+  position: absolute;
+  background: rgb(0, 18, 36);
+  background: linear-gradient(90deg, rgba(0, 18, 36, 0.9766281513) 0%, rgba(0, 170, 255, 0.3) 100%);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.video video {
+  width: 100%;
+  z-index: 0;
+}
