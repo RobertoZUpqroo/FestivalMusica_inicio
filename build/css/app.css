@@ -458,6 +458,12 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .contenido-festival {
+    margin-top: 0;
+  }
 }
 .contenido-festival h2 {
   margin-bottom: 2rem;
