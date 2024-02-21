@@ -474,3 +474,72 @@ img {
 .contenido-festival .fecha {
   color: #868daa;
 }
+
+.lineup h3, .lineup p {
+  text-align: center;
+  color: white;
+}
+.lineup .dia {
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.escenarios-contenedor p {
+  color: black;
+}
+
+.bg-blancolu {
+  background-color: #dae3e5;
+}
+.bg-blancolu li:nth-child(odd) {
+  background-color: #adc1c5;
+}
+
+.bg-rojo {
+  background-color: #ec406b;
+}
+.bg-rojo li:nth-child(odd) {
+  background-color: #e2174a;
+}
+
+.escenario {
+  padding-top: 2rem;
+}
+.escenario p:after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 2rem auto 0 auto;
+}
+
+.metal .nombre-escenario:after {
+  background-image: url("../../../build/img/icono_edm.png");
+}
+
+.rockpunk .nombre-escenario:after {
+  background-image: url("../../../build/img/icono_rock.png");
+}
+
+.calendario {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.calendario li span {
+  font-weight: 400;
+}

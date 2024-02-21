@@ -4,9 +4,8 @@
 .sobre-festival {
     padding: 5rem 0;
     @include m.tablet {
-        @include m.grid(2);
+        @include m.grid(2, 5rem);
     }
-
 }
 
 .contenido-festival {

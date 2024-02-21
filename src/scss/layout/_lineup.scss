@@ -1,0 +1,75 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.lineup {
+
+    h3, p {
+        text-align: center;
+        color: white;
+    }
+    .dia {
+        text-transform: uppercase;
+        margin: 5rem 0;
+    }
+}
+
+.escenarios-contenedor {
+    @include m.tablet {
+        @include m.grid(2, 5rem);
+    }
+
+    p {
+        color: black;
+    }  
+}
+
+.bg-blancolu {
+    background-color: v.$blancolu;
+
+    li:nth-child(odd) {
+        background-color: darken(v.$blancolu, 15%);
+    }
+}
+.bg-rojo {
+    background-color: v.$rojo;
+
+    li:nth-child(odd) {
+        background-color: darken(v.$rojo, 10%);
+    }
+}
+
+.escenario {
+    padding-top: 2rem;
+
+    p {
+        &:after {
+            content: '';
+            display: block;
+            width: 20rem;
+            height: 10rem;
+            background-size: 15rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 2rem auto 0 auto;
+        }
+    }
+}
+
+.metal .nombre-escenario:after {
+    background-image: url('../../../build/img/icono_edm.png');
+}
+
+.rockpunk .nombre-escenario:after{
+    background-image: url('../../../build/img/icono_rock.png');
+}
+
+.calendario {
+    @include m.resetear-lista;
+    li {
+        padding: 2.5rem;
+        font-weight: 700;
+        span {
+            font-weight: 400;
+        }
+    }
+}
