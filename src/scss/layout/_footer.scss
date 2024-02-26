@@ -1,0 +1,12 @@
+@use 'base/variables' as v;
+
+.site-footer {
+    padding: 1rem;
+    border-top: .1rem solid;
+    border-color: v.$text;
+    p {
+        margin: 0;
+        text-align: center;
+        color: v.$text;
+    }
+}

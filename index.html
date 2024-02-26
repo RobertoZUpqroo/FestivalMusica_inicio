@@ -15,12 +15,12 @@
 
     <header class="header">
         <div class="contenedor contenido-header">
-            <h1>HellFest Metal Tribute</h1>
+            <a href="index.html"><h1>HellFest Metal Tribute</h1></a>
 
             <nav class="navegacion-principal">
-                <a href="#">Line Up</a>
-                <a href="#">Galeria</a>
-                <a href="#">Boletos</a>
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galeria</a>
+                <a href="#boletos">Boletos</a>
             </nav>
         </div>
     </header>
@@ -60,7 +60,7 @@
         </div>
     </section>
 
-    <section class="lineup">
+    <section id="lineup" class="lineup">
         <h3>Line Up</h3>
     
         <p class="dia">Viernes 21</p>
@@ -175,5 +175,60 @@
         </div> <!--escenario-contenedor -->
     </section>
     
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galería</h3>
+
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos">
+        <h3>Boletos</h3>
+
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 Día</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+            
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                    </ul>
+                </div>
+
+                <footer class="pase-footer">
+                    <p>$100usd</p>
+                </footer>
+                
+            </div>
+            <div class="premium pase">
+                <p class="nombre-pase">Pase 2 Días</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+            
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                        <li>Camisa del Evento</li>
+                        <li>Acceso VIP</li>
+                    </ul>
+                </div>
+                
+                <footer class="pase-footer">
+                    <p>$200usd</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>HellFest Metal Tribute. Todos los derechos reservados ©</p>
+    </footer>
+
+    <script src="build/js/app.js"></script>
 </body>
 </html>
